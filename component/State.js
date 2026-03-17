@@ -7,7 +7,7 @@ import React, { useState } from 'react';
 import { Text, View, Button, } from 'react-native';
 
 const State = () => {
-    const [name, setName] = useState("Anil");// here setname is behaving like a function
+    const [name, setName] = useState("Anil");
     function testname() {
         setName("Shreya")
     }

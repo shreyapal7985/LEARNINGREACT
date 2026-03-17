@@ -12,7 +12,7 @@ const Press = () => {
     return(
         <View>
             <Button title='press me 1' color={'green'} onPress={warn}></Button>
-            <Button title='touch me 2' color={'orange'} onPress={() => press2("garima")}></Button>// used for parameter
+            <Button title='touch me 2' color={'orange'} onPress={() => press2("garima")}></Button>
         </View>
     );
 };
