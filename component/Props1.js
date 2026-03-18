@@ -11,13 +11,13 @@ const Props1 = () => {
         <View>
             <Text style={{fontSize:25}}>Concept of Props</Text>
             <Button title="props check me" color={'pink'} onPress={()=>setName('Abhishek')}></Button>
-            <Props2  name={name} age={23}/>
+            <UserDetail name={name} age={23}/>
 
         </View>
     );
 };
  
-const Props2 = (props) => {
+const UserDetail = (props) => {
     return(
         <View>
             <Text style={{fontSize:23}}>{props.name}</Text>

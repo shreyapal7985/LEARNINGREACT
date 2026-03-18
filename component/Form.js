@@ -16,7 +16,7 @@ const Form = () => {
 
     return (
         <View style={{ borderColor: 'blue', borderWidth: 4 }}>
-            <TextInput style={style.Input}placeholder='enter your name ' onChangeText={(text) => sgitetName(text)} value={name}></TextInput>
+            <TextInput style={style.Input}placeholder=' your name ' onChangeText={(text) => setName(text)} value={name}></TextInput>
             <TextInput style={style.Input} secureTextEntry placeholder='enter your password ' onChangeText={(text) => setPassword(text)} value={password}></TextInput>
             <TextInput style={style.Input} placeholder='enter your email ' onChangeText={(text) => setEmail(text)} value={email}></TextInput>
             <Button title='Print details' onPress={() => setDisplay(true)}></Button>
