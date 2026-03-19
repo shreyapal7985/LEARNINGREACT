@@ -1,12 +1,13 @@
 // useEffect is used  for using the life cycle method in function component, not use in class component , also known as hook
-//on line 10 we square bracket so that console only ren at the time of mounting(loading) not at updating time and unmounting time
+//on line 10 we use square bracket so that console only run at the time of mounting(loading) not at updating time and unmounting time
+//Without square bracket useEffect component will be render always whenever the state and props get changed
 import React, {useEffect, useState} from "react";
 import { View,Text } from "react-native";
-import { Button } from "react-native/types_generated/index";
+import { Button } from "react-native";
 const Use=()=>{
     const[count,setCount]=useState(0);
     useEffect(()=>{
-        console.warn("hello");
+        alert("hello");
     },[])
     return(
         <View>
