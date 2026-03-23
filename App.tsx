@@ -13,14 +13,14 @@ import {
   View,
   
 } from 'react-native';
-import Pressablebtn from './component/Pressable';
+import Platforms from './component/Platform';
 
 
 const App = () => {
    return(
 <View style={{flex:1}}>
   
-  <Pressablebtn/>
+<Platforms/>
 </View>
     
   );
