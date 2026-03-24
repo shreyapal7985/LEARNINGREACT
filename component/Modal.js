@@ -1,4 +1,4 @@
-//Modal takes the whole width of the screen and set the backgroundColor white so, to display or fetch the remaining items on the screen we require transparet vaalue must be true
+//Modal takes the whole width of the screen and set the backgroundColor white so, to display or fetch the remaining items on the screen we require transparent value must be true
 import React, { useState } from "react";
 import {View,Text,Button,StyleSheet,Modal,} from 'react-native';
 const ModalComponent=()=>{

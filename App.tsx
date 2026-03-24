@@ -13,14 +13,14 @@ import {
   View,
   
 } from 'react-native';
-import Platforms from './component/Platform';
+import App2 from './component/StackNavigation';
 
 
 const App = () => {
    return(
 <View style={{flex:1}}>
   
-<Platforms/>
+<App2/>
 </View>
     
   );

@@ -10,7 +10,7 @@ const Platforms=()=>{
                 <View style={{ backgroundColor:'green',height:40,width:40}}/>
             }
             <Text style={styles.text}>hello</Text>
-            <Text style={{fontSize:30}}>{JSON.stringify(Platform.constants.reactNativeVersion.major)}</Text>
+            <Text style={{fontSize:30}}>{JSON.stringify(Platform.constants.reactNativeVersion.minor)}</Text>
         </View>
     )
 }
