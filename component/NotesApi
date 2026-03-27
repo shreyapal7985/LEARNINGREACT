@@ -1,0 +1,98 @@
+{/*The Line You Asked About
+result = await result.json();
+🧠 What this line actually does
+
+👉 It converts the API response into usable data (JSON format)
+
+🔍 Step-by-step breakdown
+1️⃣ First step:
+let result = await fetch(url);
+
+👉 This gives you a Response object, NOT actual data
+
+Example:
+
+Response {
+  status: 200,
+  headers: {...},
+  body: ReadableStream
+}
+
+❌ You cannot directly use this data
+
+2️⃣ Second step (your line):
+result = await result.json();
+
+👉 This does TWO things:
+
+✔️ Converts raw response → JSON
+✔️ Extracts actual data from API
+📦 Real Example
+API returns:
+{
+  "name": "Shreya",
+  "age": 21
+}
+Without .json():
+let result = await fetch(url);
+console.log(result);
+
+👉 Output:
+
+Response {...} ❌
+With .json():
+let result = await fetch(url);
+result = await result.json();
+console.log(result);
+
+👉 Output:
+
+{ name: "Shreya", age: 21 } ✅
+🔴 Why await again here?
+
+Because:
+
+👉 result.json() is ALSO asynchronous
+👉 It returns a Promise (developer.mozilla.org
+)
+
+So:
+
+await result.json()
+
+means:
+
+👉 “Wait until data is fully converted to JSON”
+
+🧠 Simple Analogy
+
+Think like this:
+
+fetch() → You received a sealed package 📦
+.json() → You open the package
+
+👉 Without opening → you don’t know what’s inside
+
+⚠️ Common Mistake
+
+❌ Doing only this:
+
+let result = await fetch(url);
+console.log(result.name); // ❌ undefined
+
+👉 Because data is still inside body
+
+✅ Correct Pattern (Always use this)
+const response = await fetch(url);
+const data = await response.json();
+🧠 Key Takeaway
+Step	Purpose
+fetch()	Get response from server
+.json()	Convert response → usable data
+🚀 Final Summary
+
+👉 result = await result.json(); means:
+
+✔️ Extract real data
+✔️ Convert into JavaScript object
+✔️ Make it usable in your app*/}

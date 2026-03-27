@@ -13,7 +13,7 @@ import {
   View,
   
 } from 'react-native';
-import App2 from './component/StackNavigation';
+import App2 from './component/Api';
 
 
 const App = () => {
