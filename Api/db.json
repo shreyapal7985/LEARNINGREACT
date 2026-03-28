@@ -1,11 +1,6 @@
 {
   "users": [
     {
-      "id": "1",
-      "name": "shreya pal",
-      "age": 34
-    },
-    {
       "id": "2",
       "name": "happy",
       "age": 30
@@ -14,6 +9,26 @@
       "id": "3",
       "name": "anjali",
       "age": 46
+    },
+    {
+      "id": "4",
+      "name": "anjana",
+      "age": 45
+    },
+    {
+      "id": "5",
+      "name": "anupama",
+      "age": 34
+    },
+    {
+      "id": "7",
+      "name": "tony",
+      "age": 34
+    },
+    {
+      "name": "Hello",
+      "age": "67",
+      "id": "JGhsJMPMLpk"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
