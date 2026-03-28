@@ -13,7 +13,7 @@ import {
   View,
   
 } from 'react-native';
-import App2 from './component/Api';
+import App2 from './component/ApiWithFlatlist';
 
 
 const App = () => {

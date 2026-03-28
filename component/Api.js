@@ -1,3 +1,4 @@
+//Go to "json placeholder" site to get the premade Api
 //await ko use krne ke liye hume function ko asyn bnana pdta h
 //👉 We use await to wait for the API response before moving to the next line
 //Without await Problems=>  ❌ You don’t get actual data
