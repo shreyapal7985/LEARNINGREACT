@@ -13,7 +13,7 @@ import {
   View,
   
 } from 'react-native';
-import App2 from './component/ApiListWithDelUpdBtn';
+import App2 from './component/Async_storage';
 
 
 const App = () => {

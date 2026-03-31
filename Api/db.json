@@ -1,35 +1,24 @@
+
 {
   "users": [
     {
-      "id": "2",
-      "name": "happy",
-      "age": 30
+      "id":1,
+      "name":"anil",
+      "age":34
     },
     {
-      "id": "3",
-      "name": "anjali",
-      "age": 46
+      "id":2,
+      "name":"shreya",
+      "age":43
     },
     {
-      "id": "4",
-      "name": "anjana",
-      "age": 45
+      "id":3,
+      "name":"sanjana",
+      "age":32
+
     },
     {
-      "id": "5",
-      "name": "anupama",
-      "age": 34
-    },
-    {
-      "id": "7",
-      "name": "tony",
-      "age": 34
-    },
-    {
-      "name": "Hello",
-      "age": "67",
-      "id": "JGhsJMPMLpk"
+      "comments":"to start the json server we have to run this command inside that file json-server --watch file_name.json"
     }
-  ],
-  "$schema": "./node_modules/json-server/schema.json"
+  ]
 }
