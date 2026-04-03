@@ -13,14 +13,16 @@ import {
   View,
   
 } from 'react-native';
-import App2 from './component/Async_storage';
+import Header from './component/Header';
+import Product from './component/Product';
 
 
 const App = () => {
    return(
 <View style={{flex:1}}>
   
-<App2/>
+<Header/>
+<Product/>
 </View>
     
   );
