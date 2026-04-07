@@ -11,18 +11,20 @@ import {
   Button,
   ScrollView,
   View,
+  Image,
   
 } from 'react-native';
 import Header from './component/Header';
-import Product from './component/Product';
+import Products from './component/Products';
 
 
 const App = () => {
+  
    return(
 <View style={{flex:1}}>
   
 <Header/>
-<Product/>
+<Products/>
 </View>
     
   );
