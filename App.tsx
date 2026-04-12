@@ -17,13 +17,13 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import App2 from './component/PracticeSheet/C_ActivityIndicator';
+import App2 from './component/PracticeSheet/D_Modal';
 
 
 const App = () => {
 
   return (
-    <SafeAreaView >
+    <SafeAreaView style={{flex:1}}>
 
 
       <App2 />
