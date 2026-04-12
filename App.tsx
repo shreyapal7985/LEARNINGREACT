@@ -17,7 +17,7 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import App2 from './component/PracticeSheet/F_Platform';
+import App2 from './component/PracticeSheet/G_WebView';
 
 
 const App = () => {
