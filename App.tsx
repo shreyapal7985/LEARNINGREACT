@@ -12,21 +12,23 @@ import {
   ScrollView,
   View,
   Image,
-  
+
+
 } from 'react-native';
-import Header from './component/Header';
-import Products from './component/Products';
+import { SafeAreaView } from 'react-native-safe-area-context';
+
+import App2 from './component/PracticeSheet/C_ActivityIndicator';
 
 
 const App = () => {
-  
-   return(
-<View style={{flex:1}}>
-  
-<Header/>
-<Products/>
-</View>
-    
+
+  return (
+    <SafeAreaView >
+
+
+      <App2 />
+    </SafeAreaView>
+
   );
 };
 export default App;
