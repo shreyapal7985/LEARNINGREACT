@@ -5,7 +5,7 @@ const App2=()=>{
         <View style={styles.main}>
             <Pressable 
             onLongPress={()=>alert("hello")}
-            delayLongPress={3000}
+            delayLongPress={1000}
            // onPressIn={()=>alert("pressin")}
             //onPressOut={()=>alert("press out")}
             >
@@ -29,7 +29,9 @@ const styles=StyleSheet.create(
             backgroundColor:"white",
             borderRadius:20,
             width:200,
-            alignItems:'center'
+            alignItems:'center',
+            shadowColor:'gold',
+            elevation:20
             
             
         

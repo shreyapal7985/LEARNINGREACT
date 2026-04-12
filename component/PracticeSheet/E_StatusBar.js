@@ -1,4 +1,5 @@
-//Status Bar is the screen or display of top of the phone where battery and wifi is displayed
+//status bar means the
+
 import React, {useState} from 'react';
 import {View,Text,Button,StatusBar,StyleSheet,} from 'react-native';
 const App2=()=>{

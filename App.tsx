@@ -17,17 +17,17 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import App2 from './component/PracticeSheet/Pressable';
+import App2 from './component/PracticeSheet/E_StatusBar';
 
 
 const App = () => {
 
   return (
-    <SafeAreaView style={{flex:1}}>
+    <View style={{flex:1}}>
 
 
       <App2 />
-    </SafeAreaView>
+    </  View>
 
   );
 };
