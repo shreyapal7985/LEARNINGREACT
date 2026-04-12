@@ -6,7 +6,7 @@ const App2 = ()=>{
     const [show,setShow]=useState(false)
     return(
         <View style={styles.main}>
-        <Modal transparent={true} visible={show} animationType='slide'>
+        <Modal transparent={true} visible={show} animationType='fade'>
             <View style={styles.center}>
                 <View style={styles.styling}>
                     <Text style={{fontSize:40}}>hello world</Text>
