@@ -19,6 +19,12 @@
       "id": "3iqvF_xrg6U",
       "name": "harry",
       "age": 45
+    },
+    {
+      "name": "Harryi",
+      "age": "50",
+      "email": "Harry@gmail.com",
+      "id": "2d4xnwdNbqI"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
