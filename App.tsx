@@ -17,7 +17,7 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import App2 from './component/PracticeSheet/I4_PostApiCallinput';
+import App2 from './component/PracticeSheet/I5_Crud';
 
 
 const App = () => {
