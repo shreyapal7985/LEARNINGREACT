@@ -9,6 +9,18 @@ const App2=()=>{
         setData(result);
 
     }
+    const datadlt= async(id)=>{
+        const url="http://192.168.1.8:3000/users";
+        let result= await fetch(`${url}/${id}`,{
+            method:'delete'
+        })
+        result=await result.json();
+        if(result){
+            console.warn("user dlt");
+            getapi();
+        }
+
+    }
     useEffect(()=>{
         getapi();
     },[])
@@ -25,7 +37,7 @@ const App2=()=>{
 
             <View style={styles.innerView}><Text>{item.name}</Text></View>
             <View style={styles.innerView}><Text>{item.age}</Text></View>
-            <View style={styles.innerView}><Button title="delete" color={'red'}/></View>
+            <View style={styles.innerView}><Button title="delete" color={'red'} onPress={()=>datadlt(item.id)}/></View>
             <View style={styles.innerView}><Button title="update" color={'grey'}/></View></View>)
             :null}
         </View>

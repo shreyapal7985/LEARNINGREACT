@@ -21,28 +21,10 @@
       "age": 45
     },
     {
-      "name": "Harryi",
-      "age": "50",
-      "email": "Harry@gmail.com",
-      "id": "2d4xnwdNbqI"
-    },
-    {
       "name": "Ffgg",
       "age": 0,
       "email": "",
       "id": "Nq9iHtNowUg"
-    },
-    {
-      "name": "",
-      "age": 0,
-      "email": "",
-      "id": "UlNIh5XwIqI"
-    },
-    {
-      "name": "Harry",
-      "age": "56",
-      "email": "shreyaoal677@gmail.com",
-      "id": "k9i5vLdkcbM"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
