@@ -17,16 +17,42 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import App2 from './component/PracticeSheet/I5_Crud';
+import Header from './component/PracticeSheet/R_Header';
+import Product from './component/PracticeSheet/R1_Product';
+
+
 
 
 const App = () => {
+  const list=[
+    {
+      name:'samsung',
+      cost:22000,
+      image:require('./component/image/img.png')
+
+    },
+    {
+      name:'Nokia',
+      cost:30000,
+      image:require('./component/image/img.png')
+    },
+    {
+      name:'oppo',
+      cost:50000,
+      image:require('./component/image/img.png')
+    }
+  ]
 
   return (
     <SafeAreaView style={{flex:1}}>
+      <Header />
+      <ScrollView>      {
+      list.map((item)=> <Product item={item}/>)
+      }</ScrollView>
 
 
-      <App2 />
+      
+      
     </SafeAreaView >
 
   );

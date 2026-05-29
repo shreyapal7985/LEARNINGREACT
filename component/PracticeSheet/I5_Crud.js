@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { View,Text,Button, StyleSheet, Modal } from "react-native";
+import { View,Text,Button, StyleSheet, Modal, TextInput } from "react-native";
 const App2=()=>{
     const [data,setData]=useState('');
     const [showModal,setShowModal]=useState(false);
@@ -30,6 +30,7 @@ const App2=()=>{
 const updateData=(data)=>{
     setShowModal(true)
     setSelectedUser(data)
+    
 }
     return(
         <View style={styles.container}>
@@ -54,8 +55,17 @@ const updateData=(data)=>{
     )
 }
 const Users=(props)=>{
+    const [name,setName]=useState(undefined);
+    const [age,setAge]=useState(undefined);
+
+    useEffect(()=>{
+        if(props.selectedUser){
+            setName(props.selectedUser.name)
+        }
+    },[props.selectedUser])
     return(
 <View style={styles.modalCenter}>
+<TextInput value={name}/>
     <View style={styles.modalText}><Text style={{fontSize:30}}>hello{props.selectedUser.name}</Text>
     <Button title="close" color={'grey'} onPress={()=> props.setShowModal(false)} /></View>
 </View>
